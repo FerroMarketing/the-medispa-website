@@ -232,31 +232,33 @@ p { margin: 0; }
    HERO
    ======================================================================== */
 
-.hero { position: relative; overflow: hidden; }
+.hero { position: relative; overflow: visible; padding-bottom: 32px; }
 .hero__grid {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.35fr);
   align-items: stretch;
-  min-height: 640px;
+  min-height: 660px;
+  position: relative;
 }
 .hero__copy {
-  padding: 96px 64px 96px 0;
+  padding: 88px 64px 88px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
-.hero__copy::before {
-  content: "";
+/* Soft cream bleed at the top-left of the photo column — quarter-circle scoop */
+.hero__scoop {
   position: absolute;
-  top: -10%;
-  right: -180px;
-  width: 360px;
-  height: 120%;
+  top: -8px;
+  left: 36%;
+  width: 220px;
+  height: 220px;
   background: var(--cream);
-  border-radius: 999px 0 0 999px;
-  z-index: -1;
+  border-radius: 0 0 100% 0;
+  z-index: 2;
+  pointer-events: none;
 }
 .hero__eyebrow { margin-bottom: 22px; }
 .hero__title { font-size: clamp(44px, 5.6vw, 80px); line-height: 1.02; }
@@ -268,13 +270,23 @@ p { margin: 0; }
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.95fr);
   gap: 0;
+  position: relative;
+  z-index: 1;
 }
 .hero__media img {
   width: 100%; height: 100%;
   object-fit: cover;
 }
-.hero__media__portrait { background: var(--cream-2); }
-.hero__media__interior { background: var(--beige); }
+.hero__media__portrait {
+  background: var(--cream-2);
+  overflow: hidden;
+  border-radius: 200px 0 0 0 / 160px 0 0 0;
+}
+.hero__media__interior {
+  background: var(--beige);
+  overflow: hidden;
+  border-radius: 0;
+}
 
 /* ========================================================================
    FEATURED TREATMENTS
@@ -523,18 +535,29 @@ p { margin: 0; }
 
 .visit {
   display: grid;
-  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.2fr) minmax(0, 1.4fr);
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.2fr) minmax(0, 1.4fr);
   background: var(--cream);
+  align-items: stretch;
+  padding: 56px 0 0;
 }
-.visit__img { background: var(--beige); }
-.visit__img img { width: 100%; height: 100%; object-fit: cover; min-height: 360px; }
+.visit__img {
+  background: transparent;
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+.visit__img img {
+  width: 100%; height: 100%; object-fit: cover; min-height: 460px;
+  border-radius: 0 320px 320px 0 / 0 50% 50% 0;
+}
 
 .visit__copy {
-  padding: 80px 64px;
+  padding: 64px 72px 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: var(--cream-2);
+  background: var(--cream);
 }
 .visit__title {
   font-family: var(--serif); font-weight: 400;
@@ -553,8 +576,8 @@ p { margin: 0; }
 .visit__list a:hover { color: var(--ink); }
 .visit__cta { align-self: flex-start; }
 
-.visit__map { background: var(--cream-2); position: relative; overflow: hidden; }
-.visit__map img { width: 100%; height: 100%; object-fit: cover; min-height: 360px; }
+.visit__map { background: var(--cream-2); position: relative; overflow: hidden; align-self: stretch; }
+.visit__map img { width: 100%; height: 100%; object-fit: cover; min-height: 460px; display: block; }
 .visit__pin {
   position: absolute;
   top: 38%; left: 62%;
