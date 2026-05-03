@@ -1,0 +1,13 @@
+{
+  "name": "the-medispa-website",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "generate": "node generate-images.mjs",
+    "serve": "python3 -m http.server 4310"
+  },
+  "dependencies": {
+    "openai": "^4.71.0"
+  }
+}

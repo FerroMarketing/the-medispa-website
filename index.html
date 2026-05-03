@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="The Medispa — advanced, results-led skin, face and body treatments in a serene heritage setting in Brunswick West, Melbourne." />
+    <title>The Medispa — Brunswick West, Melbourne</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23F1ECE2'/%3E%3Ctext x='32' y='40' font-family='Cormorant Garamond, serif' font-size='28' text-anchor='middle' fill='%231C1A17'%3EM%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <!-- ===================== NAV ===================== -->
+    <header class="nav" id="nav">
+      <div class="container container--wide nav__inner">
+        <a href="#" class="brand" aria-label="The Medispa">THE MEDISPA</a>
+
+        <nav aria-label="Primary">
+          <ul class="nav__links">
+            <li><a href="#" class="is-active">Home</a></li>
+            <li class="nav__has-dropdown" data-dropdown>
+              <a href="#treatments" class="has-caret" aria-haspopup="true" aria-expanded="false">Treatments</a>
+              <div class="nav__dropdown" role="menu">
+                <a href="#" role="menuitem">Face</a>
+                <a href="#" role="menuitem">Skin</a>
+                <a href="#" role="menuitem">Body</a>
+                <a href="#" role="menuitem">Injectables</a>
+                <a href="#" role="menuitem">Packages</a>
+              </div>
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav__cta">
+          <a href="#contact" class="btn btn--outline btn--sm">Book Consultation</a>
+          <button class="nav__burger" aria-label="Open menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4">
+              <path d="M3 7h18M3 12h18M3 17h18" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="container container--wide">
+        <div class="hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow hero__eyebrow">Personalised skin, face &amp; body treatments</p>
+            <h1 class="display hero__title">
+              <span>Thoughtful care.</span>
+              <span>Visible results.</span>
+            </h1>
+            <p class="hero__lede">
+              Advanced, results-led treatments in a serene heritage setting in Brunswick West, Melbourne.
+            </p>
+            <div class="hero__cta">
+              <a href="#contact" class="btn btn--solid">Book Consultation</a>
+              <a href="#treatments" class="btn btn--outline">Explore Treatments</a>
+            </div>
+          </div>
+          <div class="hero__media">
+            <div class="hero__media__portrait">
+              <img src="images/hero-portrait.jpg" alt="A calm, glowing client portrait." />
+            </div>
+            <div class="hero__media__interior">
+              <img src="images/hero-interior.jpg" alt="Heritage interior of The Medispa with arched windows and chandelier." />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURED TREATMENTS ===================== -->
+    <section class="section featured" id="treatments">
+      <div class="container">
+        <div class="featured__head reveal">
+          <p class="eyebrow">Featured Treatments</p>
+          <span class="divider" aria-hidden="true" style="margin-top: 18px"></span>
+        </div>
+
+        <div class="featured__grid">
+          <a href="#" class="feat-card reveal" aria-label="Face treatments">
+            <div class="feat-card__icon" aria-hidden="true">
+              <!-- droplet -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3c3 4 6 7 6 11a6 6 0 1 1-12 0c0-4 3-7 6-11z" />
+              </svg>
+            </div>
+            <img src="images/card-face.jpg" alt="Close-up of a serene face during treatment." loading="lazy" />
+            <div class="feat-card__body">
+              <h3 class="feat-card__title">Face</h3>
+              <p class="feat-card__text">Advanced treatments for lift, contour &amp; rejuvenation.</p>
+              <span class="link-cta feat-card__link">Explore</span>
+            </div>
+          </a>
+
+          <a href="#" class="feat-card reveal" aria-label="Skin treatments">
+            <div class="feat-card__icon" aria-hidden="true">
+              <!-- leaf -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 19c0-7 5-13 14-13 0 9-6 14-13 14" />
+                <path d="M5 19c2-3 5-5 9-7" />
+              </svg>
+            </div>
+            <img src="images/card-skin.jpg" alt="Macro of luxurious skincare cream texture." loading="lazy" />
+            <div class="feat-card__body">
+              <h3 class="feat-card__title">Skin</h3>
+              <p class="feat-card__text">Targeted solutions for healthy, radiant skin.</p>
+              <span class="link-cta feat-card__link">Explore</span>
+            </div>
+          </a>
+
+          <a href="#" class="feat-card reveal" aria-label="Body treatments">
+            <div class="feat-card__icon" aria-hidden="true">
+              <!-- sparkle -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v6M12 15v6M3 12h6M15 12h6" />
+                <path d="M6 6l3 3M15 15l3 3M6 18l3-3M15 9l3-3" />
+              </svg>
+            </div>
+            <img src="images/card-body.jpg" alt="Editorial body silhouette in soft daylight." loading="lazy" />
+            <div class="feat-card__body">
+              <h3 class="feat-card__title">Body</h3>
+              <p class="feat-card__text">Sculpt, smooth &amp; restore confidence in your skin.</p>
+              <span class="link-cta feat-card__link">Explore</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about" id="about">
+      <div class="about__img-l reveal">
+        <img src="images/about-interior.jpg" alt="Wide interior of the heritage Medispa lobby." loading="lazy" />
+      </div>
+      <div class="about__copy reveal">
+        <p class="eyebrow">About The Medispa</p>
+        <h2 class="about__title">
+          <span>Heritage architecture.</span>
+          <span>Modern care.</span>
+        </h2>
+        <p class="about__text">
+          Located in one of Brunswick West's heritage listed buildings, The Medispa is a calm, considered space where advanced skin and body treatments meet genuine care.
+        </p>
+        <a href="#" class="btn btn--outline btn--sm" style="align-self: flex-start">Our Story</a>
+      </div>
+      <div class="about__img-r reveal">
+        <img src="images/about-vase.jpg" alt="Olive sprig in a small vase on a recessed shelf." loading="lazy" />
+      </div>
+    </section>
+
+    <!-- ===================== SIGNATURE TREATMENTS ===================== -->
+    <section class="sig">
+      <div class="container">
+        <div class="sig__head reveal">
+          <p class="eyebrow">Signature Treatments</p>
+          <span class="divider" aria-hidden="true" style="margin-top: 18px"></span>
+        </div>
+        <div class="sig__grid">
+          <article class="sig-item reveal">
+            <div class="sig-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 4c2.5 3.5 5 6 5 9a5 5 0 1 1-10 0c0-3 2.5-5.5 5-9z" />
+                <circle cx="9.5" cy="13" r="0.6" fill="currentColor" />
+              </svg>
+            </div>
+            <h3 class="sig-item__title">Hydrafacial Rituals</h3>
+            <p class="sig-item__text">Deep cleanse. Intense glow.</p>
+            <a href="#" class="link-cta sig-item__link">Learn More</a>
+          </article>
+
+          <article class="sig-item reveal">
+            <div class="sig-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 19l8-8" />
+                <path d="M14 5l5 5-3 3-5-5z" />
+                <path d="M3 21l3-3" />
+              </svg>
+            </div>
+            <h3 class="sig-item__title">Skin Needling</h3>
+            <p class="sig-item__text">Collagen induction for real results.</p>
+            <a href="#" class="link-cta sig-item__link">Learn More</a>
+          </article>
+
+          <article class="sig-item reveal">
+            <div class="sig-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 8c2-3 5-3 7-1s5 2 7-1" />
+                <path d="M5 13c2-3 5-3 7-1s5 2 7-1" />
+                <path d="M5 18c2-3 5-3 7-1s5 2 7-1" />
+              </svg>
+            </div>
+            <h3 class="sig-item__title">Medical Peels</h3>
+            <p class="sig-item__text">Renew skin clarity and tone.</p>
+            <a href="#" class="link-cta sig-item__link">Learn More</a>
+          </article>
+
+          <article class="sig-item reveal">
+            <div class="sig-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 12c3-3 6-3 9 0s6 3 9 0" />
+                <path d="M3 7c3-3 6-3 9 0s6 3 9 0" />
+                <path d="M3 17c3-3 6-3 9 0s6 3 9 0" />
+              </svg>
+            </div>
+            <h3 class="sig-item__title">RF Face &amp; Neck Packages</h3>
+            <p class="sig-item__text">Firm, lift &amp; tighten with RF technology.</p>
+            <a href="#" class="link-cta sig-item__link">Learn More</a>
+          </article>
+
+          <article class="sig-item reveal">
+            <div class="sig-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 19l9-9" />
+                <path d="M14 5c1 2 3 4 5 5l-3 3c-2-1-4-3-5-5z" />
+                <circle cx="6" cy="18" r="1.4" />
+              </svg>
+            </div>
+            <h3 class="sig-item__title">Cosmetic Consultations</h3>
+            <p class="sig-item__text">Expert, personalised treatment planning.</p>
+            <a href="#" class="link-cta sig-item__link">Learn More</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SHOP ===================== -->
+    <section class="shop" id="shop">
+      <div class="container container--wide">
+        <div class="shop__inner">
+          <div class="shop__copy reveal">
+            <p class="eyebrow">Curated for Results</p>
+            <h2 class="shop__title">
+              <span>Clinical skincare.</span>
+              <span>Elevated.</span>
+            </h2>
+            <p class="shop__text">
+              Premium, professional-grade skincare to support and extend your results.
+            </p>
+            <a href="#" class="btn btn--outline btn--sm">Shop Skincare</a>
+          </div>
+
+          <div class="shop__rail">
+            <article class="product reveal">
+              <div class="product__img"><img src="images/product-zo.png" alt="ZO Skin Health Daily Power Defense bottle." loading="lazy" /></div>
+              <div>
+                <p class="product__brand">ZO® Skin Health</p>
+                <p class="product__name">Daily Power Defense</p>
+              </div>
+              <a href="#" class="link-cta product__cta">Shop Now</a>
+            </article>
+
+            <article class="product reveal">
+              <div class="product__img"><img src="images/product-neocutis.png" alt="Neocutis Bio Serum Firm bottle." loading="lazy" /></div>
+              <div>
+                <p class="product__brand">Neocutis</p>
+                <p class="product__name">Bio Serum Firm</p>
+              </div>
+              <a href="#" class="link-cta product__cta">Shop Now</a>
+            </article>
+
+            <article class="product reveal">
+              <div class="product__img"><img src="images/product-skinceuticals.png" alt="SkinCeuticals C E Ferulic dropper bottle." loading="lazy" /></div>
+              <div>
+                <p class="product__brand">SkinCeuticals</p>
+                <p class="product__name">C E Ferulic</p>
+              </div>
+              <a href="#" class="link-cta product__cta">Shop Now</a>
+            </article>
+
+            <article class="product reveal">
+              <div class="product__img"><img src="images/product-alastin.png" alt="Alastin Restorative Skin Complex bottle." loading="lazy" /></div>
+              <div>
+                <p class="product__brand">Alastin</p>
+                <p class="product__name">Restorative Skin Complex</p>
+              </div>
+              <a href="#" class="link-cta product__cta">Shop Now</a>
+            </article>
+
+            <article class="product reveal">
+              <div class="product__img"><img src="images/product-is-clinical.png" alt="iS Clinical Cleansing Complex bottle." loading="lazy" /></div>
+              <div>
+                <p class="product__brand">iS Clinical</p>
+                <p class="product__name">Cleansing Complex</p>
+              </div>
+              <a href="#" class="link-cta product__cta">Learn More</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIAL ===================== -->
+    <section class="testi" aria-label="Client testimonials">
+      <div class="testi__copy">
+        <span class="testi__quote-mark" aria-hidden="true">&ldquo;</span>
+
+        <div class="testi__slide is-active" data-slide="0">
+          <p class="testi__quote">The Medispa is Brunswick West's best kept secret. The team are so knowledgeable and the results speak for themselves.</p>
+          <p class="testi__sig">— Sophie M.</p>
+        </div>
+        <div class="testi__slide" data-slide="1">
+          <p class="testi__quote">Genuinely the calmest, most considered space I've ever had a treatment in. My skin has never looked better.</p>
+          <p class="testi__sig">— Hannah T.</p>
+        </div>
+        <div class="testi__slide" data-slide="2">
+          <p class="testi__quote">Honest advice, no upsell, real results. I trust them with my skin completely.</p>
+          <p class="testi__sig">— Olivia R.</p>
+        </div>
+
+        <div class="testi__dots" role="tablist" aria-label="Choose a testimonial">
+          <button class="testi__dot is-active" data-dot="0" role="tab" aria-label="Quote 1"></button>
+          <button class="testi__dot" data-dot="1" role="tab" aria-label="Quote 2"></button>
+          <button class="testi__dot" data-dot="2" role="tab" aria-label="Quote 3"></button>
+        </div>
+      </div>
+      <div class="testi__media">
+        <img src="images/testimonial-interior.jpg" alt="Mirror and console table interior detail." loading="lazy" />
+      </div>
+    </section>
+
+    <!-- ===================== VISIT ===================== -->
+    <section class="visit" id="contact">
+      <div class="visit__img">
+        <img src="images/visit-interior.jpg" alt="Interior view of The Medispa." loading="lazy" />
+      </div>
+      <div class="visit__copy">
+        <p class="eyebrow">Visit The Medispa</p>
+        <h2 class="visit__title">By appointment only.</h2>
+        <ul class="visit__list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-7 7-12a7 7 0 1 0-14 0c0 5 7 12 7 12z" /><circle cx="12" cy="10" r="2.5" /></svg>
+            <span>228 Melville Road<br />Brunswick West 3055</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z" /></svg>
+            <a href="tel:0394983391">03 9498 3391</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 7l9 6 9-6" /></svg>
+            <a href="mailto:hello@themedispa.com.au">hello@themedispa.com.au</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn--solid visit__cta">Book Consultation</a>
+      </div>
+      <div class="visit__map" aria-label="Map of The Medispa, Brunswick West">
+        <img src="images/map.png" alt="Stylised map of Brunswick West showing The Medispa." loading="lazy" />
+        <span class="visit__pin">The Medispa</span>
+      </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+      <div class="container container--wide footer__inner">
+        <a href="#" class="brand">THE MEDISPA</a>
+        <ul class="footer__links">
+          <li><a href="#treatments">Treatments</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="footer__legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" /></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9h2.5V6H14a3 3 0 0 0-3 3v2H9v3h2v7h3v-7h2.4l.6-3H14V9.5A.5.5 0 0 1 14 9z" /></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
